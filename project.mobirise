@@ -1,0 +1,960 @@
+{
+  "settings": {
+    "name": "Matrix RU",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#14606b",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2.2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": "1",
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#14606b"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.0.2",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 37,
+    "versionPublish": "5.8.14",
+    "imageResize": true,
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/safe-1-128x128.png",
+    "mbrsiteDomain": "stnwimwqgq",
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Matrix RU",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-section-title": {
+              "text-align": "center",
+              "color": "#14606b"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323",
+              "text-align": "center"
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-section-title, .mbr-section-btn, .mbr-text": {
+                "text-align": "center"
+              }
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"8\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Кто такие русские или американцы – Богу неведомо, ибо создал Бог Человека, о Нём лишь и печётся.</b></h1>\n                <h2 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Хто такі росіяни чи американці – Богу невідомо, бо створив Бог лише Людину, про неї й дбає.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-success\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Button 1</a> <a class=\"btn btn-success-outline\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Button 2 &gt;</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s48MCQYojq",
+          "_anchor": "header1-f",
+          "_sourceTheme": "mobirise5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@sticky)": {
+              ".navbar-dropdown": {
+                "position": "relative !important"
+              }
+            },
+            "& when (@sticky)": {
+              "z-index": "1000",
+              "width": "100%",
+              "& when not (@transparent)": {
+                "position": "relative",
+                "min-height": "60px"
+              },
+              "nav.navbar": {
+                "position": "fixed"
+              }
+            },
+            ".dropdown-item:before": {
+              "font-family": "Moririse2 !important",
+              "content": "'\\e966'",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".dropdown-menu": {
+              "padding": "0"
+            },
+            ".dropdown-item": {
+              "border-bottom": "1px solid #e6e6e6",
+              "&:hover, &:focus": {
+                "background": "@primaryColor !important",
+                "color": "white !important"
+              }
+            },
+            ".nav-dropdown .link": {
+              "padding": "0 0.3em !important",
+              "margin": ".667em 1em !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem"
+            },
+            ".nav-link": {
+              "position": "relative"
+            },
+            ".container": {
+              "display": "flex",
+              "margin": "auto"
+            },
+            ".iconfont-wrapper": {
+              "color": "@iconsColor !important",
+              "font-size": "1.5rem",
+              "padding-right": ".5rem"
+            },
+            ".navbar-caption": {
+              "padding-right": "4rem"
+            },
+            ".navbar-nav": {},
+            ".dropdown-menu, .navbar.opened": {
+              "background": "@menuBgColor !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-left": "-1.8rem",
+                "padding-right": "1rem",
+                "font-size": "inherit",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "77px",
+              "transition": "all .3s",
+              "border-bottom": "1px solid transparent",
+              "&:not(.navbar-short)": {
+                "border-bottom": "1px solid #e6e6e6"
+              },
+              "& when not (@transparent)": {
+                "background": "@menuBgColor"
+              },
+              "& when (@transparent)": {
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity)"
+              },
+              "&.opened": {
+                "transition": "all .3s"
+              },
+              ".dropdown-item": {
+                "padding": ".5rem 1.8rem"
+              },
+              ".navbar-logo img": {
+                "width": "auto"
+              },
+              ".navbar-collapse": {
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-right": "0",
+                  "padding-top": ".5rem",
+                  "padding-bottom": ".5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3.8rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem"
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": ".5rem",
+                  "padding-bottom": ".5rem"
+                }
+              },
+              "&.navbar-short": {
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all .3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "170px"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "position": "relative",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "currentColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": ".5rem 1rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center"
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "77px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~'+' 2rem)",
+                "left": "-1rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n        <select title=\"Amount\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#000000\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\">\n        <header>Styles</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"transparent\">\n        <input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#14606b\">\n    </mbr-parameters>\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n        <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"https://mobiri.se\">\n                        <img src=\"../_images/logo.png\" alt=\"Mobirise Website Builder\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Brand Name</a></span>\n            </div>\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-n\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Патогенез</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-o\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Диагноз</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-p\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Цена</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-q\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Качество</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-r\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Эволюция</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-s\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Право</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-t\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Лечение</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-u\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Россия</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-v\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Украина</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-w\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">США</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-x\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Война</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"index.html#content10-y\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">Власть</a></li><li class=\"nav-item dropdown\"><a class=\"nav-link link dropdown-toggle text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\" data-toggle=\"dropdown-submenu\" data-bs-toggle=\"dropdown\" data-bs-auto-close=\"outside\" aria-expanded=\"true\">RU</a><div class=\"dropdown-menu\" aria-labelledby=\"dropdown-295\"><a class=\"dropdown-item text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">UA</a><a class=\"dropdown-item text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Введите Текст\">EN</a></div></li></ul>\n                <div class=\"icons-menu\" mbr-if=\"showIcons\">\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-facebook socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-twitter socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n                    </a>\n                </div>\n                <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Download Now</a></div>\n            </div>\n        </div>\n    </nav>\n\n</section>",
+          "_cid": "s48OLK6784",
+          "_anchor": "menu1-h",
+          "_sourceTheme": "mobirise5",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Патогенез</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">По мнению господина Лаврова, отношения США и России – разговор немого с глухим. Объективно, два дурака спорят: кто из них умнее. К сожалению, это не метафора, это патология.<b> Любой гуманитарный конфликт – свидетельство ментальной недееспособности сторон</b>.\n<br><br>Третья Аксиома Эволюции: <b>«Если одни находят смысл в том, что бесполезно для других – ошибаются все – лишь Истина необходима каждому»</b>. Поэтому, «русское» так же бесполезно, если не пагубно, для «американского», как и наоборот. И лишь безумие – спорить о бессмысленном для Жизни.\n<br><br><b>Политика, бизнес, любовь есть удовлетворение себя за счет согласного на это</b>. Чем больше согласных, тем слаще удовольствие. Тысячелетиями по этой формуле безудержно работают «печатные станки» национального, религиозного и прочего тиражирования. Что и привело к Гиперинфляции Человека.\n<br><br>Копийность – обязательное условие выживания, но лишь в Доинтеллектуальном мире. В мире Интеллекта она – жизненное противопоказание: <b>чтобы получить слепок процесса, процесс придётся остановить</b>. Культура, Религия, Национализм – лишь некоторые слепки ОСТАНОВЛЕННОЙ ЭВОЛЮЦИИ.\n<br><br>Это сегодня Они проигрывают даже Фейсбуку. Но, именно Они стали первыми в Мире «социальными сетями», которые предложили Человеку <b>ИМЕТЬ БОЛЬШЕ, ЧЕМ ОН УМЕЕТ.</b> И Человек не устоял: <b>МЕНТАЛЬНЫЙ КОЛЛЕКТИВИЗМ был утвержден Матрицей Гуманитарного Миропорядка</b>.\n<br><br>И лишь спустя тысячелетия, «вдруг», оказалось, что в Единую Картину эти «пазлы» не складываются. От чего и беспокойно: слишком уж очевидна вероятность намерений «подогнать» их с помощью ядерного оружия. Что абсолютно закономерно, когда <b>«Иметь» на всех не хватает</b>.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tMUEE6PtBT",
+          "_anchor": "content10-n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Диагноз</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b>Синдром Приобретённого Идеологического Дефицита</b>. Возникает в среде Ментального Коллективизма. Поражает всякое сознание, материальные возможности которого избыточны по отношению к его интеллектуально-духовным способностям.\n<br><br>Подобное состояние, когда <b>Человек имеет больше, чем умеет</b> – приводит к <b>злокачественной монетизации отношений</b>: прибыль становится коррумпированной, законы – субъективными; интеллектуально-духовная эволюция – бессмысленной; мирное сосуществование мировоззрений – невозможным.\n<br><br>Главное и необратимое осложнение Синдрома Идеологического Дефицита –<b> Ментальное «Ожирение» Человека</b>. В своей гуманитарной массе это новый, но уже глобально-доминирующий Социальный Класс, общественные запросы которого превышают его персональную продуктивность.\n<br><br>Избрав Ментальный Коллективизм Матрицей Миропорядка, Человек разошелся с Эволюцией в методах и целях их главной миссии.  Если <b>Эволюция есть достижение Единства Разностей</b>, то Человек пытается организовать Единство, стерев всякую Разность. Дело уже до полов (гендерных) дошло.\n<br><br>Если <b>Эволюция есть движение от Большого к Малому</b> до нулевой грани между Избытком и Дефицитом, что и есть Совершенство Физическое, Ментальное и, наконец, Профессиональное.  То Коллективизм – наоборот – это движение от Малого к Большому с целью растворить эту грань в Избытке. И все стремятся в Рай.\n<br><br>И, наконец, если <b>для Эволюции каждый Человек – равноценная ей Система</b>, что гарантирует жизнеспособность всех и каждого порознь. То для Коллективизма Человек – это расходник, жизнь которого вне коллектива практически невозможна.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-o",
+          "_isUserblock": true,
+          "_cid": "tMUFzJWKRv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Цена</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b>В Доинтеллектуальном Мире, где главенствует Эволюция, всё подчинено Качеству</b>, предела которому нет вообще. Поэтому Природа успешна миллиарды лет и без Конституции. А Человек, каких-то пару тысячелетий, даже пукает по правилам, но уже стоит на пороге самоуничтожения.\n<br><br>И дело не в возрасте. <b>В мире животных и растений Количество регулируется объективно</b>: сезонность, стихии, болезни. В Мире Интеллекта всем управляет Сознание, которое не только не ограничивает, но и поощряет рост Количества любой ценой, особенно – в ущерб Качеству.\n<br><br>Цена этой ошибки немалая. <b>Всякое Количество имеет предел, за которым неизбежен дефицит пространства</b>: санитарного, творческого, экономического и т.д. Поэтому всё, что доживает до чужих границ, обречено сгореть во внутреннем, внешнем или обоих конфликтах сразу.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-p",
+          "_isUserblock": true,
+          "_cid": "tMUGFTnJDe",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Качество</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Лучше всех оперирует не русский, не американский, а – хороший хирург, которым становятся не на митингах и даже не в церкви, а – за операционном столом. Именно поэтому<b> Бог не ходит на митинги</b> и не сидит в чатах – некогда Ему. Мы же танцуем и поём. Значит ли это, что дела Бога похуже наших?\n<br><br>Это значит, что Мир, в котором кукурузный початок дешевле его изображения; лицедеи богаче крестьян, а шуты правят королями и народами – такой <b>Мир исчерпал себя</b> даже в извращениях. Остаётся лишь «позавидовать»: настолько филигранно Ментальный Коллективизм выскоблил Человека из человека.\n<br><br>Идеологическая прострация, политическая истерия, национальные и религиозные психозы, параноидальный меркантилизм – не столько картина Мира, сколько <b>«медицинские» показания не к модной перезагрузке, а к непопулярной фрагментации</b>. Вопрос лишь в том, кем она будет выполнена: Эволюцией или Человеком?&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-q",
+          "_isUserblock": true,
+          "_cid": "tMUH2LHdIc",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Эволюция</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b>Де-Юре: «И создал Бог Человека»</b>. Про американцев, русских и всех прочих – ни слова. Де-Факто Земля принадлежит кому угодно, кроме Её Законного Собственника. Еще Диоген заметил. Поэтому, восстановить Законность, по-прежнему, означает стать Человеком. Но, это совсем не про хорошие манеры.\n<br><br><b>Эволюция Человека – это не новый Мир и не новое туловище</b>. Ни то, ни другое в Совершенстве не нуждается. Эволюция Человека – это новое Сознание как использовать себя в этом Мире, а не как использовать этот Мир для себя. И вот уже как несколько тысячелетий эта Миссия стоит на паузе.\n<br><br>Интеллект, тем временем, с остервенением потрошит планету до атомов, но не ради пропитания, а ради удовольствий, гордыни и господства Человека… над Человеком! Остальные 99,9% человечества живут по культурным, политическим, религиозным и прочим лекалам, поэтому <b>Интеллектом не пользуются вообще.\n</b><br><br>На самом деле, <b>Миссия Человека в границах Мироздания касается исключительно Его ИНТЕЛЛЕКТА</b>. «Тело», как и условия для функционирования в Пространстве, были «отшлифованы» миллионами лет Эволюции до Совершенства. Поэтому, трогать ИХ не было ни задачи, ни смысла.\n<br><br><b>Порог выносливости Интеллекта или испытание на «вшивость» – вот и вся Миссия</b>. Жизнь в пределах Необходимого, а не Желаемого, он же объективный стандарт Доинтеллектуального Мира – оказались Человеку не по зубам. На первом же витке Ментальной Эволюции Он погряз в Избытке и сошёл с «Орбиты». \n<br><br>Т.е., <b>в 21 веке Человек – даже ещё не Животное</b>. Унизив Интеллект в Праве на Совершенство, Он превратился в обузу для Природы и бесполезность для Эволюции. Поэтому, если мы не определимся с новой Матрицей Миропорядка добровольно, Эволюция сделает это принудительно. Всё просто: либо МЫ шагнем в будущее, либо Оно шагнет в нас.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-r",
+          "_isUserblock": true,
+          "_cid": "tMUHxudPrS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Право</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Своё первое поражение в Правах Человек испытывает, когда пытается понять: почему его отдают на воспитание в чужие руки? Ведь этого не делают даже звери. Такова цена Сделки, в которой Родители обретают Свободу, а Социум – очередной Расходник. С этого момента <b>Ребёнком занимаются все, кроме Отцов его</b>.\n<br><br>С наибольшим аппетитом Его поглощает «Система Образования», которая в силу своей коллективности вообще <b>не способна развивать личные способности, поэтому «прививает» социальные навыки</b>. Это значит, что энергия «ученика» снова уйдёт не на развитие собственного, а на отторжение чужого. И это лишь начало Противостояния.\n<br><br>В общем, при таком объёме персонального, гендерного, социального, политического, религиозного и других форм Протеста, который генерирует<b> Мировая Система Социализации Человека</b>, детонация не случиться лишь в том случае, если не взойдёт Солнце.\n<br>&nbsp;&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-s",
+          "_isUserblock": true,
+          "_cid": "tMUJ3KHPev",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Лечение</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">В силу объективной несовместимости с Эволюцией Мироздания, Ментальный Коллективизм обречён. Необратимый рост его критической массы уже вопрос не Времени, а – Решения. <b>Победитель Финального Противостояния и получит Взрыв</b>. Ядерный, Гуманитарный, Экологический ли – значения уже не имеет.\n<br><br>С исчезновением одного из финалистов, исчезнет Мир на Земле – ни одна из сторон не способна освоить <b>Гуманитарное Наследие противника</b>. Самое малое – отсрочить Великую Анархию – не торопиться побеждать. А вот выжить в ней – придётся отформатировать ту самую «призму», имя которой – Сознание.\n<br><br><b>В общем же, чтобы исцелить и Общество, и Личность – достаточно воспользоваться Третьей Аксиомой Эволюции, известной как Центрифуга Избытка: «Исключить из пользования всё, что имеет смысл для одних и бессмысленно для других». А легализовать этот механизм в форме политической идеологии – это уже в частности.&nbsp;</b><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-t",
+          "_isUserblock": true,
+          "_cid": "tMUJphMeKv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Россия</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">«Медведь; водка; лошадь на скаку; Иван-дурак; русские не сдаются; православие; казаки; поживём-увидим; Толстой; Чайковский» и так далее – известные <b>крессы Русского Мира</b>. Сузить всё это к понятному целеуказанию, которое чаще называют «Национальной Идеей», не получается даже у самых русских.\n<br><br>В связи с чем, <b>запрос на интеллектуальную и гуманитарную прецизионность среди русских практически отсутствует</b>: русская гидравлика всегда протекает; всяк в уме старательный у них – чернь; те же, кто «вокруг да около» – политики и прочая «творческая интеллигенция» – «Элита». И что самое главное – всех это устраивает.\n<br><br>Оппозиция есть, конечно. Как и везде Она служит маркером общественных настроений. Но русскость Её в другом. Всяк, кто в России небогат талантами, работает абы как, но умеет не работать вообще, может воспользоваться Ею, чтобы сменить социальную «прописку» – <b>перебраться в «Политическую Элиту»</b>.\n<br><br>В общем-то, «Максимальный Результат при Минимальном Усилии» – Формула Эволюции, поэтому главный поведенческий мотив каждой Личности. Но, возвести его в степень коллективного поведения на уровне светской сакральности, когда <b>преступник готов умереть за своего палача</b> – сумели только Коммунисты.\n<br><br>Нет, это не сбой в Формуле и даже не злой русский гений – худшее случилось тысячелетиями ранее. В оригинале Формулы Эволюции, Максимальным И Минимальным Значениями определено <b>Качество, которое Человек ловко подменил на Количество</b>, когда понял, что вкупе жить проще.\n<br><br>Этот подвох, не имевший тогда ни гражданства, ни национальности, и предопределил историю Человечества по сей день. <b>Иметь больше, чем Умеешь</b> – слишком сильный соблазн, чтобы не воспользоваться им. Так, началась <b>Эволюция Порока</b>. Из семени Ментального Коллективизма проросли Нации, Религии, Культуры, Народы и, конечно, же Русские.\n<br><br>А дальше всё по наклонной. Азарт Коллективных Достижений спровоцировал <b>Избыточный Количественный Рост «культур»</b> до неизбежности ограждать Духовные владения Физическими границами. Хотя бы для того, чтобы сохранить аутентичность. И дабы не превратилась оранжерея в джунгли, тут и возникла вакансия «Садовника». \n<br><br>Формально, конечно, эта Должность закреплена за Богом. Т.е., <b>Человек назначил Бога ухаживать за Садом,</b> который получил от Него же в подарок… На самом деле, все хотят и пробуют быть «Садовником». Что, с точки зрения Эволюции, вполне себе Справедливо. И Русские в этом желании весьма преуспели, если не превзошли весь Мир.\n<br><br>Всё, что лишает Человека Самодостаточности, можно считать средством Его вовлечения в Зависимость. Поэтому, Ленин был прав, но преступно нечестен, когда называл Религию «опиумом для народа». Потому что в ряду идеологических зависимостей, <b>Коммунизму даже героин не соперник.\n</b><br><br>Больше двух тысячелетий понадобилось Христианству, около тысячелетия – Исламу и лишь два десятка лет – Коммунизму, чтобы 30% Человечества избрало Каждого своим Проводником. И судя по Их материально-духовной прочности, <b>Мир</b> <b>«Товарищей» даже не рассматривает план «B».\n</b><br><br>Справедливости ради, столь большой разрыв в достижениях заключён не столько в силе Коммунизма, сколько в слабости Религии, от которой Человек зависит уже меньше, чем от налоговой инспекции. А о ПК-Играх и говорить нечего: <b>много ли в Мире детей закатят истерику на запрет молиться?\n</b><br><br>Тем не менее, именно Коммунизм покорил вершину Совершенства в Эволюции главного Порока на Планете – Ментального Коллективизма. А вскоре Он взошёл и на Олимп: в 1917 году Власть на 1/6 обитаемой суши захватили <b>Большевики по Форме и Нищие по Содержанию.\n</b><br><br>Но, если все Идеологии Коллективизма замедляют, и лишь как максимум – останавливают Эволюцию Интеллекта, то в Стране Советов Её, вмести с реками, повернули вспять. В этом и сокрыта <b>«победительная» токсичность Коммунизма</b> над всеми Его сородичами Демократами, Либералами, Анархистами и прочими.\n<br><br>Доза Коллективизма, введённая Коммунизмом Русскому Пролетариату, обоим показалась Победной, но оказалась Фатальной и для обоих. <b>Удовольствие ценой Смерти</b> – так погибают все наркоманы. Поэтому, Страна Советов так быстро родилась и так рано умерла. Жаль только, что не Своей Смертью.\n<br><br>Всякое Количество имеет Предел Роста, за которым становится токсичным для самого себя. Именно поэтому <b>все Империи обречены на распад</b>. Пытаться же разрушить их досрочно – лишь продлить им жизнь. Ничто так не пробуждает от «сна», как угроза жизни или жертвенная смерть собрата.\n<br><br>Преднамеренный развал СССР не стал исключением из правил. Разрушив страну Советов, <b>Западная Демократия реанимировала Российскую Империю в лице Русского Мира</b>, глобальное поведение которого, становится всё созвучнее с амбициями влиятельных Игроков на Международной Арене.\n<br><br>Распад СССР избавил Советскую Идеологию от бремени отрицания религий. В остальном её социальная концепция – практически абсолютная модель Коллективизма. Что в сумме с немалыми ресурсами и <b>подтолкнуло Старый Свет и Глобальный Юг на сближение с Новой Россией</b>.\n<br><br>И всё же, «химия» этих отношений – в «аналоговости» Сторон. <b>99% адептов Коллективизма априори неспособны эволюционировать персонально</b>. Поэтому, яркие ветрины «Цифровых Миров» не вызывают у них ничего, кроме обострения хронического снобизма до безумных величин. А дружить с болезнью утомительно даже для самых отчаянных мазохистов.\n<br><br>Тем более, что огромные Природные Ресурсы позволяют покупать технические новинки без особых умственных затрат. А на фоне глобального <b>истощения цифрового прогресса</b>, смена курса на дружбу с себе равными – закономерность уже Объективная. Сколько волка не корми, дружить он будет с Лесом.\n<br><br>И станут Вассалы Господами. «Цифровые Миры» будут служить «Мирам Аналоговым» до последнего «Учёного».  Увы, <b>если Человек берётся за Ум, то Большевик – только за револьвер</b>. Русские Большевики за свой револьвер уже взялись. На очереди Большевики Китайские, а уж за этими и Арабские.\n<br><br>Увы, больно, но закономерно. Если бы Творец нуждался в Партии или Нации, то не создавал бы механизм генетической неповторимости – все сразу родились бы Мусульманами или Республиканцами и жил бы Мир в абсолютном Единстве. <b>Поэтому, глупо делать то, чего не делает Бог</b>.\n<br><br>Глупость ещё большая – упрекать Бога в несовершенстве, наивно полагая, что Он не позаботился о защите Своего Замысла от каких бы то ни было Угроз. «Все, кто находит смысл в том, что бесполезно для других, самоуничтожаться в противостоянии этом» – <b>Центрифуга Ментальной Эволюции или самое Совершенное минное поле на Планете</b>.\n<br><br>А судя по тому, что ни в одно из гуманитарных противостояний Бог персонально ещё не вмешивался – Центрифуга работает по назначению, безукоризненно срабатывая на любой Ментальный Избыток. Но, поражает другое: <b>суицидальное стремление Человека Властвовать – Иметь Больше, чем Умеешь</b>.\n<br><br>Хотя, по-другому и быть не может. <b>Любая Идеология нуждается не в Людях, а – в Членах</b>. Потому что Социализация Человека под себя – единственный путь выжить для любой Власти без исключения. Разница лишь в дозе Коллективизма: у Демократии она меньшая, у Коммунизма абсолютная.\n<br><br>Демократия пытается доминировать в общественном сознании Человека, не нарушая его внутренних свобод и личного пространства. <b>Два поведения в одном Человеке</b> – неблагоприятный показатель даже с точки зрения медицины. С точки зрения Эволюции самолёт сделанный на «хорошо» – это уже бомба.\n<br><br>Коммунизм плевать хотел и на личные свободы, и на личное пространство – Он должен быть везде – честному Человеку прятать нечего. И в этом Коммунисты были невероятно близки к Истине, потому что <b>границы Самодостаточного Человека – его Мозг</b>. Но этого, естественно, Они знать не могли.\n<br><br>Поэтому, первым шагом Коммунисты запретили ближайшего конкурента – Религию. Вторым – отменили Интеллект – <b>должности в Советском Союзе получали не преданные науке, а верные Коммунизму</b>. Ну а главную миссию – саму Коллективизацию, поручили «Творческой Интеллигенции», тоже назначенной из Пролетариев.\n<br><br>Кстати, русские до сих пор не понимают, что как раз вся эта гуманитарная перхоть – злейший враг любой Идеологии. Ведь по содержанию своему <b>«Творческая Элита» – это несчастнейшие люди, </b>которые неспособны жить собственной жизнью, поэтому живут жизнями чужими. Их нет ни физически, ни ментально – мертвые души.\n<br><br>Были времена, когда петь у ног Господ – наибольшая награда для них. Но <b>Власть подешевела от Повеления до Равенства</b>. Понять нынче: кто кому поёт – становиться всё труднее. Что вполне естественно – шутов так долго и беспечно увещевали на гегемонию Власти, что некоторые из них даже пытаются быть Ею.\n<br><br>Возможно, Большевики предполагали подобную наглость Пролетарской Элиты. Но, <b>заставить Человека расстаться со своими Мыслями</b> возможно лишь «предложив» ему посмаковать Мысли чужие. Хорошо ли плохо ли, но кроме «Искусства» и без принуждения, этого никто больше в Мире делать не умеет.\n<br><br>И это не утверждение, а заблуждение всех Политиков. От чего Хлеб Сеющие живут хуже Хлеб Рисующих. На самом деле, Искусством, и то отчасти, является лишь Музыка. Лишь Она есть Состояние, а не Ориентир, как Песня, которая «убивает» и Музыку, и Человека. Всё остальное – живопись, поэзия, скульптура, театр, кино – <b>Преступное Ремесло и ритуальное барахло в гроб Самодостаточности Человека</b>. И не важно в какой стране.\n<br><br>Не меньше, как Великим Прозрением было отношение к Искусству, заявленное в Исламе. Но Мир этого «не заметил». А вот Россия заметила. Нет, не саму доктрину, в частности. Живой отклик Арабского Мира к себе, Россия вызвала <b>подлинным Интересом к Нравственным Достижениями Ислама</b> в общем.\n<br><br>Большего знака внимания Ислам не получал за всю Свою Историю, это во-первых. А во-вторых, это – практически зелёный свет Великому Халифату, хоть и в рамках Многополярного Мира. Многополярный Мир – новый «торговый» знак, под которым теперь продается весьма затребованное в Старом Свете и Глобальном Юге Равенство. <b>Коммунизм 2.0</b> шагает по Планете.\n<br><br>Стать Новым Светом, а не отражаться в Его ветринах – такого шанса Старый Свет, конечно же, не упустит. В общем, событие революционное. И тем не менее, это даже не претензия на Новый Миропорядок – <b>Порядок остаётся Старым, меняется только Власть</b>. А Миром всё также Правит Коллективизм.\n<br><br>Конечно, если «Русско-Арабская Демократия» должна состояться как Эволюционный эксперимент, так тому и быть. Но, если участь Ментального Коллективизма и без того предрешена, это значит, что Человеку выпала редкая <b>возможность не приближать неизбежное</b>. Стоит лишь отказаться от Избыточных Намерений.\n<br><br>Тем временем, Намерений вырваться из Плена Ментального Коллективизма никто даже декларирует. А ведь это, вкупе с огосударствленными «Искусством» и «Образованием», тревожные <b>Маркеры Глобальной Остановки Гуманитарной Эволюции</b>.\n<br><br>В таких условиях каждый выживает за счёт Инерции Достижений. Новый Свет делает ставку исключительно на Достижения Технического Прогресса. Хотя, даже Дети знают, что Гуманитарная Эволюция и Технический Прогресс – практически не тождественны – <b>разобрать Оригинал, чтобы создать никчемную Копию</b> – это даже не Искусство.\n<br><br>Проиграв Техническому Прогрессу, Россия сохранила значительные Природные Ресурсы, инерционность которых достаточна чтобы пережить Новый Свет, но абсолютно недостаточна чтобы сохранить Государственность. И это не угроза ни России в частности, ни Миру вообще. Это неизбежность – <b>Эволюция не терпит Потребителей</b>.\n<br><br><b>«Если драка неизбежна, надо бить первым» </b>– слова Президента России. Из важного в смысловом ряду спикера этой сентенции – демонстрация осведомлённости, силы ну и, конечно же, оправдание вооруженного вторжения в Украину.\n<br><br>А вот с точки зрения Эволюции всё гораздо проще: если Человек берётся за Ум, то Большевики берутся за Револьвер. Если Человек рассматривает Войну как крайнее Решение, <b>закончились не Решения – закончился Человек</b>.\n<br><br>Развязанная Россией Война в Украине, а за ней вооружённый мятеж Частной Военной Компании – вскрыли <b>злокачественную неспособность Русской Власти Эволюционировать</b> и абсолютную беспомощность Мира отстоять Мир.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-u",
+          "_isUserblock": true,
+          "_cid": "tMUK1cINsA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Украина</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Демократия, Фашизм, Коммунизм, Капитализм, Ислам, Христианство и другие Коллективные Мировоззрения – <b>единородные дети Ментального Коллективизма</b>, который является общим знаменателем, единицей измерения и корневой системой всех идеологий и религий Мира без исключения.\n<br><br>Решение «срезать» не ветку, а целый ствол – оказалось фатальным для всего Древа. Ликвидация Советского Союза стала опосредованным, а рождение Независимой Украины – непосредственным <b>катализатором цепного распада всех Институтов Коллективизма</b>. И украинская локализация – совсем не провиденье.\n<br><br>Свет в доме общими усилиями и «сегодня», против каторжного труда у лучины в молитвах о рае, но «завтра» – <b>безальтернативный «наркотик» Ментального Коллективизма</b>. Справиться с этим монстром Украина не могла, потому что до «брака» с СССР ни Верой, ни Деньгами не «болела», поэтому Иммунитетом на Коллективизм не обладала. \n<br><br>Что, собственно, и повлекло особую тяжесть зависимости. Среди всех потомков СССР, именно советские украинцы всё также думают, работают, <b>мечтают по-Советски</b>. Правда, ИМЕТЬ они желают уже по-Европейски – не слишком много, чтобы ассимилироваться в новое пространство.\n<br><br>Но всё это – ничто, по сравнению с <b>воспитанием по-Советски</b>, которое живёт и здравствует в Украине по сей день. Современные показатели уровня формализма в украинском образовании куда выше показателей советских и практически близки к абсолютным, вплоть до отрицания Знаний вообще.\n<br><br>Увы, но спустя тридцать лет уже не кажется странным, почему в поддержке от «высокообразованной» Западной Демократии оказались пирожки, а не «акушер», способный <b>перерезать пуповину советского образования у Новорожденной Украины</b>. Больной больному не помощник.\n<br><br>Материальная Коррупция – явление объективное для всех форм Коллективизма. Рождается она с каждой новой Семьей, поэтому вечна и вездесуща. Больший объём КОРЫСТНОГО КОМПРОМИССА не единицу Человека чем в Семье, существует только в Коммунизме, давший начало особой Коррупции – <b>Коррупции Гуманитарной</b>.\n<br><br>Организовать коллектив возможно лишь вокруг идеи, цели, Божества. А поскольку Коммунизм отрицает Бога, <b>своим Божеством он назначил Человека</b>, который сначала поработал, а теперь живёт в своё наслаждение – Авторитет т.е. Поэтому советские люди делают всё возможное, лишь бы не работать.\n<br><br>Так в СССР родилась <b>Гуманитарная Коррупция, превратившая всякий труд в Формальность</b>, что вкупе с приличными материальными ресурсами создало у Украины иллюзию пребывания в Раю в прямом и переносном смысле. Поэтому выбираться с «теплой кровати» Она не стала, а заставить было некому.\n<br><br>Подсчитывать Трудовые потери Украины за тридцать лет в советском сне – уже нет смысла. Теперь весь смысл в одном: как жить дальше. <b>Идеологическая инерция Коммунизма практически исчерпала себя</b>. А других средств «передвижения» по Жизни у Украины никогда не было и нет.\n<br><br>Провиденье или совпадение, но <b>инерционность Христианства</b> тоже не сегодня завтра иссякнет. Простота, с которой в Украине запрещаются Религии, и это не вызывает религиозного восстания, говорит лишь об одном: Религия для украинцев такая же Формальность, как Образование и Труд.\n<br><br><b>Состояние цивильных Идеологий</b> в Украине в еще большем упадке. А чтобы ориентироваться в «аду», если родился в «раю» – на это нужно столетия, которых сейчас нет ни у кого. И если Демократия инвестирует в Украину лишь Оружие и Деньги, это значит, что кроме Смерти ей тоже предложить больше нечего.\n<br><br>Увы, само Время свидетельствует: <b>конкурировать с советским «опиумом»</b>, за «употребление» которого могли и квартиру дать – практически невозможно. Тщетные попытки международного сообщества реабилитировать Украинское Сознание лишь усугубляют страдания Тела Украины.\n<br><br>И последний штрих. В потоке идеологических банкротств, сама по себе Государственность, как и все стальные формы Ментального Коллективизма, также доживает последние денёчки. Лишив себя Единственного Объективного Права на Свободное Перемещение, <b>Человек понизил себя эволюционно ниже Зверя</b>.\n<br><br>Украина никогда не была самодостаточным Государством и никогда не считала Человека хуже Зверя. Несмотря на мыслимые и немыслимые интриги вовлечь её в<b> утробу Ментального Коллективизма</b>, она прошла через все его пороки, но осталась Идеологически Непорочной – сама во грех пала, но других не принудила.\n<br><br>Нынешняя Украина еще не способна на <b>Господство Здоровое</b>, что значит владеть собой. Но, и <b>Господством Патологическим</b> – владеть другими – она никогда не болела. Да, быть под «кем-то» – не всегда приятно. Но лишь Грешники становятся Праведниками. Больно и досадно, но Грех – неотъемлемая часть Эволюции.\n<br><br>Поэтому запретить Грех невозможно априори. В Украине запрещать Его нечем и некому. Потому что, как и Образование, Религии и всё остальное, что не в «Авторитете», <b>Закон в Украине – Формальность</b> тоже. Что, в итоге, и предопределило украинскую локализацию гуманитарных пороков Мира.\n<br><br><b>Собрать все «болезни» в одном месте</b> – последний, из всех возможных, вариант испытаний как для Болезней, так и для Места. Однажды, через такое испытание прошел Человек.\n<br>\n<br>Книга Пророка Исаии 53:4-6. <b>«Но Он взял на Себя наши немощи и понес наши болезни; а мы думали, что Он был поражаем, наказуем и уничижен Богом. Но Он изъязвлен был за грехи наши и мучим за беззакония наши; наказание мира нашего было на Нем, и ранами Его мы исцелились. Все мы блуждали, как овцы, совратились каждый на свою дорогу: и Господь возложил на Него грехи всех нас!».\n</b><br><br>Теперь пришло время Государства, а если точнее – Места, ставшего для Мира Центрифугой Избытка и <b>осью Возрождения Естественного Миропорядка</b>, в котором все, кто находит смысл в том, что бессмысленно для других – самоуничтожаться в противостоянии этом.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-v",
+          "_isUserblock": true,
+          "_cid": "tMUNCtLunm",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>США</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">«Уповаем на Бога» – официальный девиз США, печатаемый на обратной стороне купюр американского доллара. Фраза, мягко говоря, вольная. Особенно, если учесть, что ни долларом в частности, ни <b>Деньгами вообще, Бог не пользуется априори</b>.\n<br><br>Тем не менее, никакого расчёта столь изыскано обратить на себя внимание Творца, в это изречение никто не вкладывал. Подлинная миссия фразы – сделать сам Доллар Божеством. Что и случилось: <b>Доллар сегодня – это уже не Деньги, это жизненный Ориентир</b>. Что, собственно, и стало началом Его конца и конца Великой Америки.\n<br><br><b>Если превратить инструмент в божество, перестанет работать и то, и другое.</b> К тому же, всякое Количество имеет Предел Роста. И Доллар – не исключение. Хотя, в отличии от его стоимости, его Сакральность пока не исчерпана: долги США давно выше их возможностей, но Им продолжают Верить. \n<br><br>И всё же, сакральность – вещь тоже инфляционная. Сегодня <b>КПД «тридцати сребреников» непосилен даже для миллиардов</b>. И говорит это не лишь о том, что с тех пор Деньги стоят всё меньше, а их надо всё больше. В первую очередь это говорит о том, что у США нет Идеологии, способной обеспечить Деньги достойной Работой, кроме как Кредитовать.\n<br><br>Стремительное <b>сокращение расстояния между «имею» и «хочу»</b>, синтезируемое в первую очередь именно Кредитами, делает долгосрочные проекты, включая религиозные, безынтересными для общества. От чего желающих в проститутки куда больше, чем в монастырские ворота.\n<br><br>В результате, <b>запросы любой современной нации не выше «желудочного» уровня.</b> Поэтому сегодня так сложно организовать разум, чтобы строить; и так просто возбудить его, чтобы разрушать. Анархия становится привычным состоянием общества, независимо от его материального состояния.\n<br><br>Потреблять всегда проще и дешевле, чем Создавать. Поэтому, Разум с заброшенной Волей к Творчеству, чрезвычайно быстро «подсаживается» на социальные дивиденды. А вскоре <b>желает получать их не только как «возможное» и требовать как «должное», но и отнимать как «собственное».\n</b><br><br>В этом, собственно, вся злокачественность Коллективизма, включая Демократию, спрос на которую уже невозможен без принуждения. И в этом нет ничего странного: <b>Западное Образование не обладает достаточными навыками</b> констатировать истечение срока годности этой Идеологии, после которого Она становится токсичной.\n<br><br>На самом же деле, все Идеологии Коллективизма токсичны уже с «рождения» лишь потому, что <b>размножаться ментально неспособны, </b>поэтому выживают исключительно за счёт клонирования и лишь в условиях идеологического вакуума, чтобы исключить потерю аутентичности.\n<br><br>Хотя, подобные предосторожности – что мёртвому припарка. Смерть уже состоялась, потому что всякое ментальное клонирование есть осознанное отторжение Эволюции. Да, Человек способен уничтожить любые преграды к намеченной цели. Но если преградой окажется Эволюция, в таком случае <b>Цель уничтожит Человека</b>.\n<br><br>Открытие беспроводной передачи данных поставило жирную точку в этой «анаэробной» истории. Физические границы перестали гарантировать ментальную стабильность и «сакральную» неприкосновенность всех Идеологий без исключения. Так начались <b>Великое Смешение Идеологий</b> и распад Ментального Коллективизма.\n<br><br>Внезапно образовавшийся <b>Дефицит Пространства</b> на «собственной территории» – лишь один из катализаторов объективного противостояния не только между Идеологиями, но и внутри Их. Поэтому, стратегический расчёт США на «географическую» неуязвимость их Демократии – самообман в лучшем случае.\n<br><br><b>Демократия по рецепту США</b> – весьма непростой ребус, однозначных решений которого не существует даже у его собственника. И тем не менее, если рассмотреть эту Леди под её настоящим именем – Управляемая Анархия, всё становится понятным в одно мгновение.\n<br><br>Демократия – пожалуй,<b> одно из лучших идеологических решений</b> Человека. Но, увы, исключительно за счёт побочных эффектов, что делает Демократию отличным «транквилизатором», плохим лекарством с абсолютными противопоказаниями к постоянному приёму.\n<br><br>Следующий гвоздь в «гроб» Западной Цивилизации – попытка имитировать Эволюцию с помощью Технического «Прогресса». Как результат, <b>искусственный Интеллект настолько удешевил Человека</b>, что в большей своей массе Гуманитарная Инфляция на Планете носит уже необратимый характер.\n<br><br><b>Престарелый Подросток</b> – таково функциональное состояние США, в частности, и всего Демократического Мира в общем. Конечно, для науки – это исследовательский рай, но для Эволюции – это выхолощенное семья или исчерпавший себя проект.\n<br><br><b>Если в Доме порядок, это значит, что в нём нет Детства.</b><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-w",
+          "_isUserblock": true,
+          "_cid": "tMUPxKkCg5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Война</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">В Доинтеллектуальном Мире ни один конфликт не перерастает в войну популяций лишь потому, что в Природе <b>КАЖДЫЙ САМ ЗА СЕБЯ</b>. Миллиарды лет этот способ исключает возникновение Претензий и гарантирует Эволюцию Качества всего сущего на Планете. Кроме Человека, конечно.\n<br><br>Разрешив себе Коллективизм, Человек «отлил» Топор Войны. И если с тех пор Война, как и любое другое гуманитарное противостояние для Человека – это средство достижения цели, то для Эволюции – это <b>симптом Ментальной Недееспособности</b>, чего достаточно, чтобы исключить «больного» из списка «приглашенных» эволюционировать.\n<br><br>И судя по тому, что Война всё чаще становится последним инструментом «Примирения», болезнь эта давно превратилась из хронической в злокачественную. Что, в общем, не удивительно и абсолютно закономерно, когда не Силы много, а когда Интеллекта мало. Увы,<b> мышцы «накачать» – всегда проще, чем «Извилины»</b>.\n<br><br>Хотя, последние десятилетия ни мозг, ни мышцы уже никто и нигде не «качает». <b>Все качают нефть и биткоины</b> – наивно полагая, что их Силы вполне достаточно, чтобы не только не думать и не трудиться, но и повелевать всеми остальными, кому с «углеводородами» не повезло. При этом, никто не учитывает одной детали.\n<br><br>С момента<b> отречения от Эволюции</b>, Человек утратил естественное Право распоряжаться её ресурсами де-юре. Де-факто, Он объявил Войну своему кредитору – обычная человеческая практика, что в случае с Эволюцией также означает сжечь стул, на котором сидишь.\n<br><br><b>Война – уже «естественное» состояние общества, симулирующего мир.</b> И не в том беда, что богатые делят нефть. Беда в том, что бедные начинают делить работу – таковы последствия политической глобализации, развёрнутой на фоне маниакального противостояния всевозможных идеологий за право властвовать.\n<br><br>В общем и при наличии несметного количества «учёных», может показаться странным: почему все эти экспансионеры даже не предлагают, а навязывают Миру свои Правила вместо того, чтобы искать <b>Компромисс Мировоззрений</b>. Здесь, либо с «учёными» что-то не так, либо Сожитие Достижений невозможно вообще.\n<br><br>На самом деле, единственными жертвами любой Войны, должны быть исключительно учёные, которые пытаются <b>строить ровные стены на кривом фундаменте</b>. Не солдаты, и даже не политики, а именно гуманитарные науки несут полную ответственность за миллиарды, не познавших Истину.\n<br><br>Конечно, <b>«грехопадения» мировой философии</b> никогда не было – она родилась «извращенкой». Но, именно в этом Её главная миссия – очиститься самой, ибо лишь так возможно указать Истинный путь другим. И хотя, разбив зеркало, краше не станешь, «учёный» мир неустанно бракует чужое, чтобы защитить своё.\n<br><br>Та же самая <b>Церковь де-юре обещалась быть Проводником</b>, что в 21 веке и по определению позволяет ожидать качества Её Просветительской Мысли, опережающего последнюю версию iPhone хотя бы на шаг, как минимум. Де-факто мир получил еще одно бюро свадебно-похоронных услуг с бутафорским налётом сакральности.\n<br><br>Поэтому и спешат дети в мир виртуальный, а не в церковный, который давно и безнадежно проиграл цифровому «коллеге» и по форме, и по содержанию. В этом месте и рождается «злой дух» – изощрённое принуждение добровольно любить то, чего не понимаешь. <b>Кроме как заставить уважать «необъяснимое» – невозможно ни в религии, ни в науке</b>.\n<br><br>Но, если в корзине нет грибов, это не значит, что их нет в лесу. И в этом месте возникает другое обстоятельство, которое отбивает желание «искать» любой ценой даже у самых искусных грибников. В отличии от Человека, живущего Теоремами, <b>«Лес» живёт исключительно Аксиомам</b>. И это наибольшая проблема в отношениях между Эволюцией и Человеком.\n<br><br>Вокруг Теорем ошиваются целые галактики творческой, рабочей, бюрократической и прочей “интеллигенции”. А с Аксиомой, как известно, и сам не «растолстеешь», и родственника «наваром» не побалуешь. Что, в принципе, объясняет: почему <b>очередь всегда за Должностями и никогда в Праведники</b>.\n<br><br>И не было бы края этому, если бы не эпоха Водолея. Провиденье это, шутка или совпадение – значения не имеет. Всякая <b>Теорема живёт до тех пор, пока Её кто-то отстаивает.</b> Поэтому, Аксиома – это вечный Мир и вечная Жизнь, а Теорема – вечная Война и Смерть.\n<br><br>Но, Эволюция не была бы таковой, если бы не предвидела, что минимум этого Мира в руках Человека – быть разобранным на запчасти под распродажу; максимум – вспыхнуть ядерным фейерверком на вечеринке Элит. В связи с чем на Интеллект и был установлен гениально <b>простой автоматический Предохранитель</b>.\n<br><br><b>«Все, кто находит смысл в том, что бессмысленно для других – самоуничтожаться в противостоянии этом»</b> – Третья Аксиома Эволюции, Творчества, Коллективизма и Совершенства. Да, на самом деле убивает Человека не злой дух и даже не Противник, а – банальное желание Владеть, Властвовать.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-x",
+          "_isUserblock": true,
+          "_cid": "tMUQWIRsk9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#14606b"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content10\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Власть</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Shape your future</h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b>Не Правом и не Обязанностью, а исключительно Необходимостью может быть Истинная Идеология</b>. Что есть абсолютным аргументом Её Совершенства и гарантом безоговорочного доверия к Ней. В противном случае, Человека либо искусно обманули, либо Он сознательно пользуется мертворождённым продуктом.\n<br><br>В силу того, что Ментальный Коллективизм представляет собой обычный поведенческий шаблон, Он уже несовместим с Эволюцией объективно. Поэтому, <b>«подружить» незыблемую Статику Коллективизма с Эволюционной Динамикой Личности</b> – всегда было очень сложно.\n<br><br>С особенным ожесточением свои Шаблоны бдит Религия. Что более чем закономерно: если Человек берётся за Ум, то Большевики берутся за Револьвер. Хотя, по сущностному предназначению, а тем более с такими Полномочиями, если, конечно, это не Обман – <b>всё должно быть ровным счётом наоборот</b>.\n<br><br>Эта же история в Светском Мире не столь драматична. Но, во фразе «Мы с Вами свяжемся»<b> «сгорело» куда больше «Еретиков»</b>, чем на кострах Святой Инквизиции. А когда Мировые Идеологии «вдруг» осознали необходимость собственной Модернизации, оказалось, что делать это некому, но уже и незачем.\n<br><br>Экономическая Глобализация, а за ней Технический Прогресс, запустили процесс <b>Глобализации Политической</b>. Это не сильно отражается на целостности государственных границ. Но, сохранить в таких условиях границы Мировоззрений – практически невозможно. Даже с помощью Револьвера Большевиков.\n<br><br>И хотя Сближение Религий, Культур, Наций – Высшая Ступень Развития Идеологии Коллективизма, покорить Её желают лишь те, у кого нет возможности это сделать. У кого такая возможность есть, у тех как раз Желание отсутствует напрочь – ничто так не сокращает Полномочия, как движение к Единению.\n<br><br>Отсюда такой небывалый всплеск Сближения, а точнее – Её Имитации в Старом Свете. Зерно получают в качестве помощи, на неё же рассчитывают в области энергетики и технологий, но на Оружие Деньги есть. Видимо, всё-таки чувствуют, что <b>Высшая Ступень Развития – она же точка Распада</b>.\n<br><br>Проблема лишь в том, что показывать <b>дешёвый спектакль в переполненном зале</b> и с дефицитом попкорна и «колы» – чревато и для Актеров, и для Зрителей, и для Зала. Плотность Смешения Мировоззрений достигла критических значений. Поэтому в Мире так часто полыхает.\n<br><br>Жить обособленно у Религий, Культур, Наций уже нет всё тех же возможностей, а жить вместе – ещё нет всё того же Желания. Решение этой проблемы когда-то возлагалось на<b> Единобожие</b>. Но, как и все другие попытки, эта превратилась в фарс: все признают одного Бога, но исповедуют разные Законы.\n<br><br>Хотя, <b>Синхронизировать Желания с Возможностями</b> – несложно. Только делать это надо не в отношении Общества и не с точки зрения Власти, как это делает Коллективизм. А делать это лишь по отношению к Личности и с точки зрения Компетенций – Квалификации, чего Коллективизм делать не может и не будет.\n<br><br>Любой Качественный Рост Человека повышает уровень Его Персонификации в Обществе. Если это <b>Прикладная Квалификация</b>, Общество получает Профессионала, чтобы сохранить которого – придётся жертвовать Властью – принять Его условия. В противном случае Общество потеряет Члена. А так, лишь наживает себе Конкурента.\n<br><br>Если это <b>Ментальная Квалификация</b>, Общество получает классического «Еретика», ревизионизм и новаторство которых – костью в горле любой Идеологии. А когда все хотят Мира, но каждый на своих Условиях – это неизбежная Война, масштаб которой зависит от масштаба Интересов.\n<br><br>Формально, карта конфликтов на Планете очерчена границами Государств. Тем не менее, ни одно из этих противостояний не имеет ни локального, ни глобального, к сведению интересантов, решения. <b>Количественные изменения значений формулы никак не отражаются на её Качестве</b>.\n<br><br><b>Выход из Ситуации</b> очевиден: ни одну Войну уже не отменить и не отмотать. А вот заменить Формулу, точнее – сменить Её на Аксиому – было бы весьма кстати. И это не билет в Будущее – Оно давно наступило. Текущая задача – не быть «высаженным» из Него, чтобы не начинать Жизнь с ядерной зимы.\n<br><br>ВЫЖИТЬ сегодня – это <b>«реанимация» Гуманитарной Эволюции</b> и возобновление участия Человечества в Эволюции Мироздания, а не в гонке верблюдов. Условие всё то же: воспроизвести Качественное Состояние Человека, способное обеспечить Его Персональную Самодостаточность. Это теоретически.\n<br><br>На практике и в условиях Глобального Смешения Мировоззрений, любая попытка синхронизировать Человека с каким бы то ни было Обществом чаще уже вредна, чем бесполезна. Поэтому, <b>упразднение Институтов Социализации</b> не только снимет Гуманитарное Напряжение, но и освободит колоссальный объём ресурсов.\n<br><br>И никакой пустоты или вакуума это не образует – <b>удаление Избытка никогда не вызывает Дефицита</b>. А избавление от Посредника – лишь дополнительная Прибыль, которой с Избытком хватит, чтобы синхронизировать Человека не с Обществом или Государством, а – с Эволюцией.\n<br><br>В общем, <b>замена Ментального Коллективизма на Доктрину Эволюции</b> – это практически «пересадка» Нового Миропорядка. Состоится Она в любом случае: либо естественным путём, т.е. без «обезболивания»; либо с некоторым седативным опережением – по доброй воле Человека.\n<br><br>Безусловно, Доктрина Эволюции не лишена недостатков, иначе Она бы уже остановилась. Но то, чем руководствуется Человек, даже в подмётки Ей не годится хотя бы потому, что без Демократии или Христианства, Коммунизма или Иудаизма – <b>Природа успешна миллиарды лет</b>. А вот Они без Природы вообще ничего не стоят.\n<br><br>Поэтому, и в условиях Глобального Смешения Мировоззрений, Доктрина Эволюции – это объективно приемлемый ориентир Единения для любых Мировоззрений; и <b>достаточный гарант Персональных Свобод Человека</b>, ограниченных лишь Его возможностями и спросом со стороны Общества.\n<br><br>А поскольку <b>единственный Результат Эволюции – Процесс</b>, пребывать в постоянстве которого Коллективизм не приспособлен вообще, это обеспечивает идеологическую безопасность Доктрины на уровне, достаточного просто пережить конкурентов во Времени.\n<br><br>Функциональность Доктрины Эволюции зависит лишь от степени Её имплементации в Государственную Идеологию, что подразумевает замену Конституционального или Общественного Договора на <b>Персональную Материально-Духовную Сделку между Государством и Человеком.\n</b><br><br><b>Цена.</b> Конечно же, всё это могло давно свершиться и с куда меньшими потерями. Но, от этого само Решение не становится ни проще, ни сложнее. Как и прежде Человеку необходимо принять тот факт, что все Его Правила нуждаются в калибровке, а проще говоря – в срочной замене.\n<br><br>Стоит отметить, что поскольку в Доктрине Эволюции Необходимое гарантированно бесплатно, а <b>плата взымается только за Желаемое</b>, Мужества в это Решение придётся вложить куда больше, чем Денег. Безусловно, носителям «вируса» Здорового Господства – те, что Властвуют над Собой – вкладываться не придётся.\n<br><br>А вот для «инфицированных» Господством Патологическим – те, что Властвуют над Другими – это редкая возможность <b>переквалифицировать Порок в Миссию</b>. Вселенского прозрения от неё ожидать, не стоит, но достаточную «тектоническую» активность – Она гарантирует.\n<br><br><b>Тектоническая плита текущего Миропорядка – Ментальный Коллективизм</b> – давно испещрена глубокими Трещинами. Поэтому, одно меткое движение в точке наибольшего напряжения разрушит её навсегда. И это уже вопрос не Времени, а Решения. Главное – не оказаться под Её развалинами. \n<br>\n<br>Но и глупо разрушать старый дом, не построив новый.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content10-y",
+          "_isUserblock": true,
+          "_cid": "tMUSpGkV5u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "padding-right": "2rem"
+            },
+            "@media (max-width: 992px)": {
+              ".card": {
+                "margin-bottom": "2rem!important"
+              },
+              ".card-wrapper": {
+                "padding": "0 1rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".link-wrap": {
+                "align-items": "center"
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            },
+            ".mbr-text, .link-wrap, .mbr-section-btn": {
+              "text-align": "right"
+            }
+          },
+          "_name": "features12",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features11\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Items\" name=\"showLink\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"m-0 row align-items-center\">\n            <div class=\"col-12 col-lg\" mbr-class=\"{'offset-lg-1': fullWidth}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n                            <b>Automagically mobile</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .link-wrap, .mbr-section-btn\">Нет Тех, Кто опережает. Есть Те, Кто опаздывает.</p>\n                        <div class=\"mbr-text mbr-fonts-style counter-container\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                            <ul>\n                                <li>Mobile-friendly</li>\n                                <li>Easy setup</li>\n                                <li>Edit visually</li>\n                            </ul>\n                        </div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mb-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View all our features</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"p-0 col-12 col-lg-{{imageWidth}} md-pb\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/avtor-815x961.jpg\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features12-z",
+          "_isUserblock": true,
+          "_cid": "tMUULoTeIf",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "flex-direction": "column",
+              "justify-content": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "justify-content": "center",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "width": "auto",
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer3\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#14606b\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">\n                        <a class=\"text-white\" href=\"#\" target=\"_blank\">About us</a>\n                    </li>\n                    \n                    \n                    \n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    2023</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tMUVphu5F2",
+          "_anchor": "footer3-10",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
