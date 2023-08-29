@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Matrix RU",
+    "name": "Диагностика и Коррекция Гуманитарных Аномалий",
     "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
@@ -47,7 +47,7 @@
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "llhylkyrp0",
+    "mbrsiteDomain": "029xpkug47",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -60,7 +60,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Matrix RU",
+        "title": "ЛАБОРАТОРИЯ ИДЕОЛОГИЧЕСКОЙ БЕЗОПАСНОСТИ",
         "meta_descr": "Диагностика и Коррекция Гуманитарных Аномалий",
         "header_custom": "",
         "footer_custom": "",
